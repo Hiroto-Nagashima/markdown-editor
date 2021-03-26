@@ -26,5 +26,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     publicPath: 'dist/',
+  },
+  devServer: {
+    // ファイルを変更すると自動的にブラウザに反映させるフラグ
+    hot: true,
+    // 起動時にブラウザで開くフラグ
+    open: true,
   }
 }
